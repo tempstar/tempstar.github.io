@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Swooped - Find the perfect Temp!</title>
+    <title>TempStar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/3.0.3/yeti/bootstrap.min.css">
@@ -13,8 +14,16 @@ body{
 .btn-danger{
   background-color: #c0392b;
 }
+.pad{
+  margin-top: 50px
+}
 .navbar-brand > img{
   max-width: 220px;
+}
+img {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 </style>
 <!-- Latest compiled and minified JavaScript -->
@@ -38,6 +47,7 @@ body{
               </button>
               <a class="navbar-brand" href="#">TempStar</a>
             </div>
+            <button class="btn btn-success pull-right">telephone number</button>
           </div>
         </div>
       <div class="container" style="background: white;">
@@ -50,7 +60,7 @@ body{
   			</div>
 
   			<div class="col-lg-6 text-center">
-  				<video controls width="500px" height="400px" style="border: 1px solid #ddd; margin-top: 25px; border-radius: 10px;"></video>
+  				<video controls width="500" height="400" style="border: 1px solid #ddd; margin-top: 25px; border-radius: 10px;"></video>
   			</div>
 
   			<div class="col-lg-6">
@@ -76,21 +86,21 @@ body{
 
   		</div>
 
-  		<h3 class="text-center">Check out some of our available Candidates:</h3>
+  		<h3 class="text-center pad">Check out some of our available Candidates</h3>
       <div class="row">
         <div class="col-lg-6">
           <hr>
-            <h4 class="panel-title">
+            <div class="panel-title">
                 <div class="row">
                   <div class="col-lg-6 text-center">
                     <p class="lead text-center">Caroline Wakefield<br><small>Purchase Ledger Clerk</small><br></p>
                     <button class="text-center btn btn-success btn-sm" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-chevron-down"></span> More</button>
                   </div>
                   <div class="col-lg-6 text-center">
-                    <img src="103.jpg" class="img-circle text-center">
+                    <img src="103.jpg" class="img-circle text-center" alt="Caroline Wakefield">
                   </div>
                 </div>
-            </h4>
+            </div>
             <hr>
           <div id="collapseOne" class="panel-collapse collapse">
             <div class="panel-body">
@@ -106,17 +116,17 @@ body{
         </div>
         <div class="col-lg-6">
           <hr>
-            <h4 class="panel-title">
+            <div class="panel-title">
                 <div class="row">
                   <div class="col-lg-6 text-center">
                     <p class="lead text-center">Jen King<br><small>Legal Secretary</small><br></p>
                     <button class="text-center btn btn-success btn-sm" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-chevron-down"></span> More</button>
                   </div>
                   <div class="col-lg-6 text-center">
-                    <img src="102.jpg" class="img-circle text-center">
+                    <img src="102.jpg" class="img-circle text-center" alt="Jen King">
                   </div>
                 </div>
-            </h4>
+            </div>
             <hr>
           <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body">
@@ -133,33 +143,74 @@ body{
 
         </div>
 
-  		<div class="row">
+  		<div class="row pad">
 
   			<h3 class="text-center" style="margin-bottom: 30px;">Key Benefits</h3>
   			<div class="col-sm-6 col-md-4 text-center">
-			    	<img src="payroll.png" class="img-rounded">
-            <hr>
+			    	<img src="payroll.png" class="img-rounded" alt="payroll">
+
               <h2>Payroll management</h2>
 					    <p>Although we give you the power to select your own temp staff, we handle all of the boring admin for you. Our candidates right to work is checked, their background audited and all of their payment processed by us inhouse!</p>
-			</div>
+			 </div>
   			<div class="col-sm-6 col-md-4 text-center">
-				    <img src="fast.png" class="img-rounded">
-            <hr>
+				    <img src="fast.png" class="img-rounded" alt="payroll">
+
             <h2>Lightning fast</h2>
               <p>Sick of waiting around for replies to your temp position? We give you acccess to thousands of temp staff ready for work! You can make instant hiring decisions or print off a variety of applicants for the firms hiring decision makers</p>
 			</div>
 			<div class="col-sm-6 col-md-4 text-center">
-				    <img src="clock.png" class="img-rounded">
-            <hr>
+				    <img src="clock.png" class="img-rounded" alt="payroll">
+
               <h2>Convenient</h2>
               <p>Dodge the annoying sales calls and make your hiring decisions when you want to. TempStar is compatible with PC, mobile and tablet - you can hire a new temp in meeting on your phone, hire a contractor on the train or search for freelancers at your desk!</p>
 			</div>
   		</div>
-  		<hr>
 
-  		</div>
+    <div class="row text-center pad">
+      <h3 style="margin-bottom: 30px;">Meet the Team</h3>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+      <div class="col-lg-3 well">
+        <img src="http://placehold.it/100" class="img-circle text-center" alt="">
+        <p class="lead">Name Placeholder<br><small>Job Title</small></p>
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> email@example.org</a>
+      </div>
+    </div>
+    </div>
 
-  	</div>
 
   	
 
