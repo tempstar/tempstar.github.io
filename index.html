@@ -13,12 +13,6 @@ body{
 .btn-danger{
   background-color: #c0392b;
 }
-.container{
-    background: white;
-    border-radius: 20px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
 .navbar-brand > img{
   max-width: 220px;
 }
@@ -33,19 +27,30 @@ body{
     <![endif]-->
   </head>
   <body>
-      <div class="container">
-
-        <a href="http://tempstar.github.io"><img src="banner.png" style="width: 100%;"></a>
+        <div class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">TempStar</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">TempStar</a>
+            </div>
+          </div>
+        </div>
+      <div class="container" style="background: white;">
   		<div class="row">
 
   			<div class="col-lg-12 heading">
-  				<h1>Search and Hire a New Breed of Staff<br>
-  					<small>Skip the recruitment consultant - find your next awesome team member with us</small>
+  				<h1>We make it easy for you to hire your next temp<br>
+  					<small>Let us look after the rest</small>
   				</h1>
   			</div>
 
   			<div class="col-lg-6 text-center">
-  				<img src="img.png" class="img-rounded" style="width: 100%; margin-top: 20px; border: 1px solid black;">
+  				<video controls width="500px" height="400px" style="border: 1px solid #ddd; margin-top: 25px; border-radius: 10px;"></video>
   			</div>
 
   			<div class="col-lg-6">
@@ -58,12 +63,14 @@ body{
   				<ul>
   					<li>Search our huge database of professional candidates</li>
   					<li>Take the search process back inhouse to ensure you're finding the right person for the job</li>
-  					<li>Save up to <strong>20%</strong> on your hiring costs!</li>
+  					<li>Save up to <strong>20%</strong> on your hiring costs!</li> 
   				</ul>
-				<div class="col-lg-12 text-center">
-          <p class="lead">register with as little as an email:</p>
-          <input type="text" class="form-control" placeholder="enter your email address">
-          <button class="btn btn-success" style="margin-top: 15px;">Search now!</button>
+				<div class="col-lg-8 col-lg-offset-2 text-center well well-sm">
+          <p><span class="lead">Start your search</span><br>it only takes an email address!</p>
+          <form class="form" role="form">
+            <input type="text" class="form-control" placeholder="email address">
+            <button type="submit" class="btn btn-sm btn-success btn-block pull-right" style="margin-top: 5px;">Sign in</button>
+          </form>
           <!--
           <div id="wufoo-q1ls8kbr0d33f5j" class="form-group">
             Fill out my <a href="https://johnparkinson.wufoo.com/forms/q1ls8kbr0d33f5j">online form</a>.
@@ -93,7 +100,7 @@ body{
 
   			<h3 class="text-center">Check out some of our available Candidates:</h3>
         <a href="#" style="color: black !important;">
-  			<div class="col-lg-4 text-center">      
+  			<div class="col-lg-6 text-center">      
           <div class="text-center">
             <img src="103.jpg" class="img-circle">
             <hr>
@@ -107,14 +114,12 @@ body{
               <!-- VINE API -->
               <h4>Profile:</h4>
               <h4>Contact Candidate:</h4>
-              <hr>
               <button class="btn btn-xs btn-danger" style="margin-top: 5px;">immediately available</button>
-              <hr>
         </div>
       </div>
       </a>
       <a href="#" style="color: black !important;">
-      <div class="col-lg-4 text-center">      
+      <div class="col-lg-6 text-center">      
           <div class="text-center">
             <img src="102.jpg" class="img-circle">
             <hr>
@@ -124,28 +129,7 @@ body{
               Handling telephone calls, enquiries and requests and dealing with them as appropriate<br>
               Dealing with incoming emails, faxes and post and often corresponding as appropriate<br>
               Taking minutes and highlighting action points<br>
-              <hr>
               <button class="btn btn-xs btn-danger" style="margin-top: 5px;">immediately available</button>
-              <hr>
-        </div>
-      </div>
-      </a>
-      <a href="#" style="color: black !important;">
-			<div class="col-lg-4 text-center">      
-          <div class="text-center">
-            <img src="101.jpg" class="img-circle">
-            <hr>
-            <p class="lead">James Savidge<br><small>Transport Planner</small></p>
-              <strong>Paragon Planning</strong><br>
-              <strong>DiPS</strong><br>
-              <strong>DPS - Transport planning</strong><br>
-              <strong>GIS in Transportation</strong><br>
-              Quick to respond and organise client deliveries<br>
-              Experience planning and running of the Fleet.<br>
-              Always prioritising workload, route planning, driver brief and de-brief via phone, SMS and email<br>
-              <hr>
-              <button class="btn btn-xs btn-danger" style="margin-top: 5px;">immediately available</button>
-              <hr>
         </div>
       </div>
       </a>
@@ -153,6 +137,7 @@ body{
   		</div>
 
   		<div class="row">
+        <HR>
   			<h3 class="text-center" style="margin-bottom: 30px;">Key Benefits</h3>
   			<div class="col-sm-6 col-md-4 text-center">
 			    	<img src="payroll.png" class="img-rounded">
@@ -170,7 +155,7 @@ body{
 				    <img src="clock.png" class="img-rounded">
             <hr>
               <h2>Convenient</h2>
-              <p>Dodge the annoying sales calls and make your hiring decisions when you want to. Swooped is compatible with PC, mobile and tablet - you can hire a new temp in meeting on your phone, hire a contractor on the train or search for freelancers at your desk!</p>
+              <p>Dodge the annoying sales calls and make your hiring decisions when you want to. TempStar is compatible with PC, mobile and tablet - you can hire a new temp in meeting on your phone, hire a contractor on the train or search for freelancers at your desk!</p>
 			</div>
   		</div>
   		<hr>
